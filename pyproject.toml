@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "nonebot-plugin-kfc-crazy"
+version = "0.0.1"
+description = "Send KFC crazy thursday articles randomly on thursday!"
+authors = ["HuParry <hu_parry@qq.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/HuParry/nonebot-plugin-kfc-crazy"
+homepage = "https://github.com/HuParry/nonebot-plugin-kfc-crazy"
+documentation = "https://github.com/HuParry/nonebot-plugin-kfc-crazy#readme"
+keywords = [
+    "nonebot2",
+    "nonebot-plugin",
+    "KFC crazy Thursday",
+    "HuParry",
+]
+packages = [{ include = "nonebot_plugin_kfc_crazy" }]
+include = ["nonebot_plugin_kfc_crazy/post.json"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = "^2.2.0"
+nonebot-adapter-onebot = "^2.2.0"
+nonebot-plugin-apscheduler = "^0.5.0"
+pydantic = ">=1.10.0,<3.0.0,!=2.5.0,!=2.5.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
